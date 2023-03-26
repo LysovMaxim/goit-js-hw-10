@@ -43,7 +43,7 @@ function makeConntry(data) {
 function makeConntryone(data) {
   const oneConntry = data
     .map(({ name, flags }) => {
-      return `<li><img src="${flags.svg}" alt="${name.official} with="100" height="100">
+      return `<li class="country" ><img src="${flags.svg}" alt="${name.official} with="100" height="100">
         <h2>${name.official}</h2></li>`;
     })
     .join('');
@@ -54,7 +54,7 @@ function makeConntryone(data) {
 function allConnty(data) {
   let listCanntry = data
     .map(({ name, population, capital, flags, languages }) => {
-      return `<div class="wrapper_flag"><img class="flags-list" src="${
+      return `<div><img class="flags-list" src="${
         flags.svg
       }" alt="Country width="50" height="50">
         <h3>${
